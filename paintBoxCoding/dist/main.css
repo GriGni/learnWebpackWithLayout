@@ -1,0 +1,893 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.main .bookingProduct {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.main .bookingProduct .copyBox-wide, .main .copyOfCorp .copyBox-wide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main #item .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main #item .moto {
+  display: flex;
+  justify-content: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+}
+
+.container {
+  display: grid;
+  max-width: 1920px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+
+.header {
+  height: 70px;
+  position: fixed;
+  padding: 0px 10vw;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: white;
+}
+.header .nav {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .nav ul {
+  display: flex;
+}
+.header .nav ul li {
+  text-transform: uppercase;
+}
+.header .nav ul li:nth-child(2) {
+  margin-left: 1vw;
+}
+.header .nav .main-logo {
+  background: url(04df720065ca3b8c1e6e.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 10%;
+  height: 50%;
+}
+
+.main .copyOfCorp {
+  height: 800px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.main .copyOfCorp .photo {
+  background: url(17e49579247acea04fa9.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main .copyOfCorp .copyBox-wide {
+  background-color: #f9dbbe;
+}
+.main .copyOfCorp .copyBox-wide .copy {
+  font-size: 4rem;
+  width: 65%;
+  text-align: center;
+}
+.main .copyOfCorp .copyBox-wide .shopBtn {
+  border: 1px solid black;
+  font-size: 2rem;
+  margin-top: 10vh;
+  padding: 2rem 6rem;
+}
+.main .copyOfCorp .copyBox-wide .shopBtn:hover {
+  background-color: black;
+  color: white;
+}
+.main .bookingProduct {
+  padding: 0px 10vw;
+  margin-top: 10vh;
+  height: 65vh;
+}
+.main .bookingProduct .photo {
+  background: url(797c6b24145f92f5a167.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  order: 1;
+}
+.main .bookingProduct .copyBox-wide {
+  background-color: #f3ede8;
+}
+.main .bookingProduct .copyBox-wide h4 {
+  font-size: 2rem;
+  margin-bottom: 4vh;
+  background-color: black;
+  color: white;
+}
+.main .bookingProduct .copyBox-wide .copy {
+  font-size: 4rem;
+  width: 65%;
+  text-align: center;
+  letter-spacing: 5px;
+}
+.main .bookingProduct .copyBox-wide .bookingBtn {
+  display: grid;
+  grid-template-columns: 90% 10%;
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+}
+.main .bookingProduct .copyBox-wide .bookingBtn:hover {
+  background-color: black;
+  color: white;
+}
+.main .bookingProduct .copyBox-wide .bookingBtn .book {
+  border-right: 1px solid black;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.main .bookingProduct .copyBox-wide .bookingBtn i {
+  font-size: 1.5rem;
+}
+.main #item {
+  height: 80vh;
+  width: 100%;
+  display: grid;
+  margin-top: 5vh;
+  grid-template-rows: 1fr 1fr 9fr;
+  justify-content: center;
+}
+.main #item .title {
+  width: 100%;
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.main #item .moto {
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+.main #item .item-grid {
+  margin-top: 15vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-column-gap: 15vw;
+}
+.main #item .item-grid .item-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.main #item .item-grid .item-flex .photo1 {
+  height: 260px;
+  width: 300px;
+  background: url(316213c71d15b43a8374.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main #item .item-grid .item-flex .photo2 {
+  height: 260px;
+  width: 300px;
+  background: url(d1bf3c5b646298d215e9.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main #item .item-grid .item-flex .photo3 {
+  height: 260px;
+  width: 300px;
+  background: url(ec2fe6b025cdc56bfdfe.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main #item .item-grid .item-flex .bottomSec {
+  text-align: center;
+}
+.main #item .item-grid .item-flex .bottomSec .content {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+.main #item .item-grid .item-flex .bottomSec .color {
+  text-transform: capitalize;
+  font-size: 3rem;
+  margin-bottom: 3vh;
+}
+.main #item .item-grid .item-flex .bottomSec .price {
+  font-size: 1.4rem;
+  opacity: 0.5;
+  margin-bottom: 3vh;
+}
+.main #item .item-grid .item-flex .bottomSec .cartBtn {
+  border: 1px solid black;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 1vh 4vw;
+  width: 100%;
+  cursor: pointer;
+}
+.main #item .item-grid .item-flex .bottomSec .cartBtn:hover {
+  background-color: black;
+  color: white;
+}
+.main #giftCard {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 80vh;
+  width: 100%;
+  margin-top: 10vh;
+  padding: 0px 10vw;
+}
+.main #giftCard .photo {
+  background: url(de9bdb06fa76ae84dfc1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main #giftCard .copyBox-wide {
+  background-color: #dee8e9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main #giftCard .copyBox-wide h4 {
+  font-size: 1.5rem;
+  color: white;
+  background-color: black;
+  margin-bottom: 3vh;
+  letter-spacing: 2px;
+}
+.main #giftCard .copyBox-wide .copy {
+  font-size: 3rem;
+  width: 50%;
+  text-align: center;
+  margin-bottom: 10vh;
+  line-height: 4vh;
+}
+.main #giftCard .copyBox-wide .buyGiftCardBtn {
+  font-size: 1.5rem;
+  padding: 2vh 4vw;
+  border: 1px solid black;
+  text-transform: uppercase;
+}
+.main #giftCard .copyBox-wide .buyGiftCardBtn:hover {
+  background-color: black;
+  color: white;
+}
+.main #howToUseIt {
+  height: 80vh;
+  width: 100%;
+  padding: 0px 10vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10vh;
+}
+.main #howToUseIt h4 {
+  font-size: 1.5rem;
+  margin-bottom: 4vh;
+  text-transform: uppercase;
+}
+.main #howToUseIt .explain {
+  font-size: 3rem;
+  text-transform: capitalize;
+  margin-bottom: 6vh;
+}
+.main #howToUseIt .shopBtn {
+  font-size: 1.5rem;
+  padding: 2vh 4vw;
+  border: 1px solid black;
+  text-transform: uppercase;
+}
+.main #howToUseIt .shopBtn:hover {
+  background-color: black;
+  color: white;
+}
+.main #howToUseIt .gridBox {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 20px;
+}
+.main #howToUseIt .gridBox .flexBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 45vh;
+  margin-bottom: 10vh;
+}
+.main #howToUseIt .gridBox .flexBox .photo1 {
+  height: 80%;
+  width: 100%;
+  background: url(61e5fc712bf1d50b533b.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main #howToUseIt .gridBox .flexBox .photo2 {
+  height: 80%;
+  width: 200px;
+  background: url(530e93f5fb3c1d799179.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main #howToUseIt .gridBox .flexBox .photo3 {
+  height: 80%;
+  width: 100%;
+  background: url(03cfe1d867d48c98a96c.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main #howToUseIt .gridBox .flexBox .photo4 {
+  height: 80%;
+  width: 100%;
+  background: url(544512b0658e313d1538.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main #howToUseIt .gridBox .flexBox .photo5 {
+  height: 80%;
+  width: 100%;
+  background: url(21871f04be26537cb3f9.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main #howToUseIt .gridBox .flexBox .photo6 {
+  height: 80%;
+  width: 100%;
+  background: url(31e437c7d18c762691e0.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main #howToUseIt .gridBox .flexBox .number {
+  font-size: 1.4rem;
+  opacity: 0.5;
+}
+.main #storyGrid {
+  margin-top: 10vh;
+  display: grid;
+  height: 180vh;
+  padding: 0 10vw;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.main #storyGrid .photo1 {
+  background: url(7239fea4c7cb6b154fec.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main #storyGrid .photo2 {
+  background: url(23c6a4211fd6e0274d8f.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main #storyGrid .photo3 {
+  background: url(17e49579247acea04fa9.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main #storyGrid .copy {
+  background-color: #f3ede8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main #storyGrid .copy .date {
+  font-size: 1.5rem;
+  margin-bottom: 4vh;
+}
+.main #storyGrid .copy .moto {
+  font-size: 3rem;
+  margin-bottom: 5vh;
+}
+.main #storyGrid .copy .link {
+  font-size: 1.3rem;
+  padding: 2vh 4vw;
+  text-transform: uppercase;
+  cursor: pointer;
+  letter-spacing: 3px;
+}
+.main #storyGrid .copy .link i {
+  margin-left: 0.5vw;
+}
+.main .emailBox {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+  justify-content: center;
+  align-items: center;
+}
+.main .emailBox h4 {
+  font-size: 1.5rem;
+  margin-bottom: 3vh;
+  letter-spacing: 2px;
+}
+.main .emailBox .promotion {
+  font-size: 4.9rem;
+  width: 50%;
+  text-align: center;
+  margin-bottom: 10vh;
+  line-height: 6vh;
+}
+.main .emailBox .sendEmail {
+  display: flex;
+  border-bottom: 1px solid black;
+  padding-bottom: 2vh;
+}
+.main .emailBox .sendEmail textarea {
+  border: none;
+  height: 5vh;
+  width: 36vw;
+  resize: none;
+  outline: none;
+  font-size: 5rem;
+  overflow: hidden;
+}
+.main .emailBox .sendEmail textarea::placeholder {
+  font-size: 3rem;
+}
+.main .emailBox .sendEmail i {
+  font-size: 3rem;
+  border: 1px solid black;
+  padding: 1vh;
+  cursor: pointer;
+}
+.main #outSideBox {
+  display: grid;
+  height: 80vh;
+  width: 100%;
+  padding: 0px 10vw;
+  margin-top: 10vh;
+  grid-template-columns: repeat(2, 1fr);
+}
+.main #outSideBox .photo {
+  background: url(31e437c7d18c762691e0.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main #outSideBox .copyBox-wide {
+  background-color: #f9dbbe;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main #outSideBox .copyBox-wide h4 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 3vh;
+  letter-spacing: 2px;
+}
+.main #outSideBox .copyBox-wide .copy {
+  font-size: 4rem;
+  width: 80%;
+  text-align: center;
+  margin-bottom: 5vh;
+}
+.main #outSideBox .copyBox-wide .instagram {
+  font-size: 1.5rem;
+  padding: 2vh 4vw;
+  border: 1px solid black;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  transition: background-color 1s ease;
+}
+.main #outSideBox .copyBox-wide .instagram:hover {
+  background-color: black;
+  color: white;
+}
+.main #photos {
+  margin-top: 10vh;
+  height: 80vh;
+  padding: 0px 10vw;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.main #photos .effect {
+  transition: opacity 0.3s linear;
+  cursor: pointer;
+}
+.main #photos .effect:hover {
+  opacity: 0.5;
+}
+.main #photos .photo1 {
+  background: url(de9bdb06fa76ae84dfc1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main #photos .photo2 {
+  background: url(797c6b24145f92f5a167.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main #photos .photo3 {
+  background: url(316213c71d15b43a8374.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main #photos .photo4 {
+  background: url(058429d43faa48876110.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main #photos .photo5 {
+  background: url(61e5fc712bf1d50b533b.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main #photos .photo6 {
+  background: url(03cfe1d867d48c98a96c.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main #photos .photo7 {
+  background: url(31e437c7d18c762691e0.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main #photos .photo8 {
+  background: url(23c6a4211fd6e0274d8f.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main #photos .photo9 {
+  background: url(7239fea4c7cb6b154fec.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main .email {
+  display: flex;
+  margin-top: 10vh;
+  font-size: 5rem;
+  justify-content: center;
+  cursor: pointer;
+  margin-bottom: 10vh;
+}
+
+.footer {
+  background-color: #f3ede8;
+  height: 30vh;
+}
+.footer .footerBox {
+  padding: 0px 10vw;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.footer .footerBox .box .title {
+  margin-bottom: 4vh;
+  opacity: 0.5;
+}
+.footer .footerBox .box ul {
+  display: flex;
+  flex-direction: column;
+}
+.footer .footerBox .box ul li {
+  margin-bottom: 2vh;
+  text-align: center;
+}
+
+@media screen and (max-width: 520px) {
+  html {
+    font-size: 30%;
+  }
+}

@@ -1,0 +1,32 @@
+%contentsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+%contentsAlign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+%buttonCSS {
+  border: 1px solid black;
+  font-size: 2rem;
+  margin-top: 10vh;
+  padding: 2rem 6rem;
+}
+
+%contentsFlexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+%contentsFlexStart {
+  display: flex;
+  justify-content: center;
+}
+
+
+$section-title: 1.5rem;
+$section-moto: 3rem;

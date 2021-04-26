@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+body {
+  height: 100vh;
+  color: #af7832;
+  font-size: 4rem;
+  background-color: #af7832;
+}
+
+#container {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-gap: 2px;
+  grid-template-columns: 1.5fr 2fr 1.5fr;
+  grid-template-rows: repeat(7, 1fr);
+  grid-template-areas:
+    "logo showNumber menu"
+    "number10 album number5"
+    "number9 album number4"
+    "number8 album number3"
+    "number7 album number2"
+    "number6 album number1"
+    "empty1 slogan empty2";
+
+  div {
+    display: inherit;
+    justify-content: center;
+    align-content: center;
+    background-color: white;
+  }
+  .effect {
+    transition: background-color 0.5s ease, color 1s linear;
+    cursor: pointer;
+    &:hover {
+      background-color: #af7832;
+      color: white;
+    }
+  }
+  .album {
+    grid-area: album;
+    background-image: url("../image/1.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  .number1 {
+    grid-area: number1;
+  }
+  .number2 {
+    grid-area: number2;
+  }
+  .number3 {
+    grid-area: number3;
+  }
+  .number4 {
+    grid-area: number4;
+  }
+  .number5 {
+    grid-area: number5;
+  }
+  .number6 {
+    grid-area: number6;
+  }
+  .number7 {
+    grid-area: number7;
+  }
+  .number8 {
+    grid-area: number8;
+  }
+  .number9 {
+    grid-area: number9;
+  }
+  .number10 {
+    grid-area: number10;
+  }
+  .logo {
+    grid-area: logo;
+    background-image: url("../image/cover.png");
+    background-position: center center;
+    background-size: cover;
+  }
+  .showNumber {
+    grid-area: showNumber;
+  }
+  .menu {
+    grid-area: menu;
+    text-transform: uppercase;
+  }
+  .empty1 {
+    grid-area: empty1;
+  }
+  .empty2 {
+    grid-area: empty2;
+  }
+  .slogan {
+    grid-area: slogan;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    span {
+      animation: scrollText 10s linear infinite backwards;
+    }
+  }
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(250px);
+  }
+  100% {
+    transform: translateX(-250px);
+  }
+}

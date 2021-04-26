@@ -1,0 +1,17 @@
+@mixin backgroundImg($url) {
+  background: url($url);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@mixin height($vh) {
+  height: $vh;
+}
+
+@mixin hover() {
+  &:hover {
+    background-color: black;
+    color: white;
+  }
+}
